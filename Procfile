@@ -1,1 +1,1 @@
-web: java -jar build\libs\TheSumOfSameElementsAndCompareANumber-all.jar
+web: java -jar build/libs/TheSumOfSameElementsAndCompareANumber-all.jar
