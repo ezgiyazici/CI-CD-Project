@@ -1,0 +1,1 @@
+This project adds the same elements in 3 lists and compares the sum with the last entered number.
