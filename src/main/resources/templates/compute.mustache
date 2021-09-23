@@ -1,0 +1,39 @@
+<title>My application</title>
+<style>
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 150%;
+}
+h2 {
+  color: black;
+  font-family: verdana;
+  font-size: 100%;
+}
+span {
+  color: red;
+  font-family: verdana;
+  font-size: 130%;
+}
+label {
+  color: blue;
+  font-family: verdana;
+  font-size: 130%;
+}
+</style>
+  <h1>The Sum of Same Elements in these lists And Compare With A Number</h1>
+  <h2>The sum of same elements in the lists less than the number : <span>{{result}}</span></h2 >
+  <form action="compute" method="post">
+        <label for="input1">List 1</label>  
+        <textarea id="input1" name="input1" rows="10" cols="30"></textarea>
+        <label for="input2">List 2</label>  
+        <textarea id="input2" name="input2" rows="10" cols="30"></textarea>
+        <label for="input3">List 3</label>  
+        <textarea id="input3" name="input3" rows="10" cols="30"></textarea>
+        <label for="input4">Number</label>  
+        <textarea id="input4" name="input4" rows="10" cols="30"></textarea>
+        <br>
+        <input type="submit">
+  </form>
+  <h2> !!!Enter a list of numbers in the first three boxes by pressing enter after each number, and enter a number in the last box.</h2>
+  <h2>This algorithm adds the same numbers in the first three boxes and compares them with the number in the last box.</h2>
