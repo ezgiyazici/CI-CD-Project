@@ -3,6 +3,8 @@
  */
 package TheSumOfSameElementsAndCompareANumber;
 
+import java.util.ArrayList;
+
 public class App {
     public String getGreeting() {
         return "Hello world.";
@@ -10,5 +12,29 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+    }
+
+    public static Integer sumOfSameElements(ArrayList<Integer> array, ArrayList<Integer> arrayTwo,ArrayList<Integer> arrayThree) {
+        
+        int count = 0;
+        if(array == null || arrayTwo == null || arrayThree == null)
+            return 0;
+        for(int i=0 ; i < array.size() ; i++){
+            if(arrayTwo.contains(array.get(i)) && arrayThree.contains(array.get(i))){
+                count+=array.get(i);
+                arrayTwo.remove(array.get(i));
+                arrayThree.remove(array.get(i));
+            }
+        }
+
+        return count;
+    }
+
+    public static boolean compare(int count , int number) {
+        
+        if(count < number)
+            return true;
+        else
+            return false;
     }
 }
