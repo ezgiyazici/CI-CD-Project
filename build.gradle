@@ -47,3 +47,5 @@ application {
     // Define the main class for the application.
     mainClassName = 'TheSumOfSameElementsAndCompareANumber.App'
 }
+task stage(dependsOn: ['shadowJar'])
+shadowJar.mustRunAfter clean
